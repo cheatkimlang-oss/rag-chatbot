@@ -4,6 +4,16 @@ A student-built Telegram and browser assistant for RUPP curriculum and campus qu
 
 [Workflow diagram](docs/RUPP_Student_Assistant_Diagram.png) | [Step-by-step handover guide (PDF)](docs/RUPP_Student_Assistant_From_Zero_To_Working_Bot.pdf)
 
+## Project status
+
+This is a working local prototype for new students in ITE, DSE, and AIE. It covers program and course questions, selected campus information, and source links. The browser and Telegram bot share the same answer service.
+
+Before calling the enrollment assistant ready for student use:
+
+- Verify fees, deadlines, required documents, and application steps for each supported program against the current intake announcement. Until then, the bot gives students the department contact and its source.
+- Test complete answers and citations on a larger set of real student questions, including short English, Khmer, and questions the bot should decline. The current retrieval benchmark checks source ranking and whether the search returns no match.
+- Have another person run the setup from a clean checkout and test the bot in Telegram. The current bot runs while the host computer stays awake and online. Hosting is a separate milestone if students need access while that computer is off.
+
 ## Quick start after cloning
 
 Open PowerShell in the cloned folder. The official curriculum snapshot and curated source notes are included. Build the local indexes before starting the app.
@@ -11,6 +21,7 @@ Open PowerShell in the cloned folder. The official curriculum snapshot and curat
     python -m venv .venv
     .\.venv\Scripts\python.exe -m pip install -r requirements.txt
     .\.venv\Scripts\python.exe -X utf8 .\src\ingest.py --collection official
+    .\.venv\Scripts\python.exe -B -X utf8 -m unittest discover -s tests -v
 
 With Ollama installed and running, enable hybrid search and generated answers:
 
@@ -23,7 +34,7 @@ Run the local readiness check, then open a terminal chat or double-click **Start
     .\.venv\Scripts\python.exe -X utf8 .\src\telegram_bot.py --check
     .\.venv\Scripts\python.exe -X utf8 .\src\answer.py --collection official
 
-Use your own BotFather token at the hidden prompt. The virtual environment, generated indexes, and supplied lecture PDF are kept locally. To run the PDF exercises and the full offline test suite, put an authorized copy of the simulation lecture in `data/practice/` and build the practice index as described below. The absolute Windows paths later in this guide refer to the original project folder.
+Use your own BotFather token at the hidden prompt. The virtual environment, generated indexes, and supplied lecture PDF are kept locally. The offline suite skips the optional lecture check when its index is absent. To run that check and the PDF exercises, put an authorized copy of the simulation lecture in `data/practice/` and build the practice index as described below. The absolute Windows paths later in this guide refer to the original project folder.
 
 
 ## Folder guide
@@ -123,10 +134,10 @@ The refresh reads the four official HTML pages, validates four years and both se
 
 #### Known limits
 
-- Fees, deadlines, scholarship eligibility, and admission requirements are unavailable in the verified source set. The assistant refers those questions to RUPP.
+- Fees, deadlines, scholarship eligibility, and admission requirements are unavailable in the verified source set. The assistant refers those questions to the department and cites its contact page.
 - AIE's Prospect introduction names DSE and its Introduction tab has placeholder text. The DSE page contains unrelated Environmental Engineering text. Program summaries use the relevant course tables and verified ITE program introduction.
 - Some AIE Hours cells have malformed notation or a prefix different from the Credit column. Original text is preserved and affected rows are flagged. Blank and partial hour breakdowns remain incomplete. ITE's fourth-year curriculum includes distinct options.
-- Exact questions are answered from local records. General PDF and web questions still use keyword retrieval and local Gemma 4. Keyword matching can miss paraphrases. Khmer support covers selected degree terms, numerals, year and semester patterns. Answers and course titles are in English.
+- Exact questions are answered from local records. General official questions use hybrid search when available and fall back to keyword search, which can miss paraphrases. Gemma 4 can write answers from retrieved passages. Khmer support covers selected degree terms, numerals, year and semester patterns. Answers and course titles are in English.
 
 The official chat shows short example questions at startup. Enter a number to ask one, type your own question, or use /examples to show the list again.
 

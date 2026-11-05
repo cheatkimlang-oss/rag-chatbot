@@ -43,7 +43,13 @@ def source(url):
 def academic_answer(question, snapshot):
     q = question.casefold().translate(KHMER_DIGITS)
     if ENROLLMENT.search(q):
-        return UNVERIFIED
+        if snapshot is None:
+            return UNVERIFIED
+        return (
+            f"{UNVERIFIED}\n"
+            f"For ITE, DSE, or AIE, email {snapshot['contact']['email']} and include your program and intake year.\n"
+            f"{source(snapshot['source_url'])}"
+        )
     if snapshot is None:
         return None
 

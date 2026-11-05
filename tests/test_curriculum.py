@@ -60,10 +60,13 @@ class CurriculumTests(unittest.TestCase):
         self.assertNotIn(self.programs["DSE"]["source_url"], result)
 
     def test_tuition(self):
-        self.assertEqual(academic_answer("What is the tuition fee for AIE?", self.snapshot), UNVERIFIED)
+        reply = self.check("What is the tuition fee for AIE?", UNVERIFIED)
+        self.assertIn(self.snapshot["contact"]["email"], reply)
+        self.assertIn(self.snapshot["source_url"], reply)
 
     def test_deadline(self):
-        self.assertEqual(academic_answer("When is the admission deadline?", self.snapshot), UNVERIFIED)
+        reply = self.check("When is the admission deadline?", UNVERIFIED)
+        self.assertIn("intake year", reply)
 
     def test_contact_email(self):
         result = self.check("What is the contact email for the department?", "fe.info@rupp.edu.kh")
@@ -86,6 +89,7 @@ class CurriculumTests(unittest.TestCase):
             answer_question("How many credits is Deep Learning in AIE?", rows, "gemma4:e2b", self.snapshot, official=True)
         self.assertIn("Deep Learning: 2 credits", output.getvalue())
 
+    @unittest.skipUnless(COLLECTIONS["practice"].is_file(), "Optional practice PDF index has not been built")
     def test_existing_practice_pdf(self):
         rows = load_passages(COLLECTIONS["practice"])
         result = best_passage("Why does the cafeteria use simulation to decide how many meals to prepare?", rows)
