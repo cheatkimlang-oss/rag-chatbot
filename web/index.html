@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RUPP Student Assistant</title>
+<style>
+:root{color-scheme:light;--ink:#292325;--muted:#64585d;--line:#e8dfe2;--wine:#74283f;--deep:#4d1729;--paper:#fffdfb;--wash:#f9f4f5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,"Segoe UI",sans-serif}
+button,input{font:inherit}
+button{cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #b65b79;outline-offset:3px}
+.shell{min-height:100dvh;display:grid;grid-template-columns:254px minmax(0,1fr)}
+aside{background:#431729;color:#fff4f7;padding:31px 23px;display:flex;flex-direction:column;gap:26px}
+.brand{display:flex;gap:12px;align-items:center}
+.seal{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#f4dce6;color:#431729;font-weight:800;font-size:12px;letter-spacing:.05em}
+.brand strong{font-size:15px;display:block;line-height:1.25}
+.brand small{color:#f3cbd9;font-size:12px}
+.new{border:1px solid #a56a7f;border-radius:10px;background:#61263d;color:white;padding:10px 12px;text-align:left;font-weight:650}
+.new:hover{background:#77344e}
+.aside-label{font-size:11px;letter-spacing:.12em;font-weight:750;text-transform:uppercase;color:#e7bccd;margin:0 0 8px}
+aside ul{margin:0;padding:0;list-style:none}
+aside li{border-top:1px solid #784459;padding:11px 0;font-size:13px}
+main{min-width:0}
+header{border-bottom:1px solid var(--line);padding:14px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+header strong{font-size:14px}
+.tag{font-size:12px;background:#eef5ed;color:#395638;border:1px solid #dce9d9;border-radius:999px;padding:4px 10px;white-space:nowrap}
+.content{max-width:900px;margin:0 auto;padding:38px 30px 24px}
+.hero{background:var(--wash);border:1px solid var(--line);border-radius:22px;padding:26px 28px;margin-bottom:28px}
+.eyebrow{margin:0 0 5px;color:var(--wine);font-weight:760;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(25px,4vw,36px);line-height:1.15;letter-spacing:-.035em;margin:0 0 9px}
+.hero p:last-child{margin:0;color:var(--muted)}
+h2{font-size:15px;margin:0 0 11px}
+.suggestions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.suggestion{border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink);text-align:left;padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:14px}
+.suggestion span:last-child{color:var(--wine);font-size:17px}
+.suggestion:hover:enabled{border-color:#ae657e;background:#fff7fa}
+.suggestion:disabled{opacity:.55;cursor:wait}
+#messages:not(:empty){margin:24px 0 12px;display:flex;flex-direction:column;gap:14px}
+.message{border-radius:14px;border:1px solid var(--line);padding:13px 16px;max-width:92%;overflow-wrap:anywhere;background:white}
+.message.user{align-self:flex-end;background:#f5e7ed;border-color:#ebd3df}
+.message.assistant{align-self:flex-start}
+.message h3{font-size:12px;color:var(--wine);margin:0 0 5px}
+.message p{margin:0;white-space:pre-wrap}
+.message ul{margin:8px 0;padding-left:20px}
+.message a{display:inline-block;margin:9px 9px 0 0;color:var(--wine);font-size:13px;font-weight:650}
+form{display:flex;gap:8px;padding:7px;background:white;border:1px solid #d8c6ce;border-radius:13px;margin-top:21px}
+input{border:0;min-width:0;flex:1;padding:9px;color:var(--ink);background:white;border-radius:6px}
+.send{border:0;border-radius:8px;background:var(--wine);color:white;font-weight:700;padding:8px 17px}
+.send:hover:enabled{background:var(--deep)}
+.send:disabled{opacity:.55;cursor:wait}
+.hint{color:var(--muted);font-size:12px;margin:7px 0 0}
+#status{color:var(--muted);font-size:13px;margin:8px 0 0}
+#status:empty{display:none}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:730px){.shell{grid-template-columns:1fr}aside{padding:13px 16px;flex-direction:row;justify-content:space-between;align-items:center;gap:12px}aside section{display:none}.new{padding:7px 9px;font-size:13px}header{padding:11px 16px}.content{padding:20px 16px}.hero{padding:19px 16px;margin-bottom:20px}.message{max-width:100%}}
+@media(max-width:420px){.suggestions{grid-template-columns:1fr}.brand small{display:none}.tag{font-size:11px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside>
+  <div class="brand"><span class="seal" aria-hidden="true">RUPP</span><div><strong>Student Assistant</strong><small>Practicum project</small></div></div>
+  <button class="new" id="reset" type="button">+ New chat</button>
+  <section aria-label="Program coverage">
+    <p class="aside-label">Programs covered</p>
+    <ul><li>Information Technology Engineering</li><li>Data Science and Engineering</li><li>Artificial Intelligence Engineering</li></ul>
+  </section>
+</aside>
+<main>
+  <header><strong>New student help desk</strong><span class="tag">Official RUPP sources</span></header>
+  <div class="content">
+    <section class="hero" id="welcome">
+      <p class="eyebrow">Student questions</p>
+      <h1>What would you like to know?</h1>
+      <p>Ask about majors, classes, or who to contact. Short questions are welcome.</p>
+    </section>
+    <section aria-labelledby="examples-title">
+      <h2 id="examples-title">Try a question</h2>
+      <div class="suggestions" id="suggestions"></div>
+    </section>
+    <div id="messages" role="log" aria-label="Conversation"></div>
+    <p id="status" role="status"></p>
+    <form id="ask">
+      <label class="sr-only" for="question">Your question</label>
+      <input id="question" placeholder="Ask a question…" maxlength="500" required autocomplete="off">
+      <button class="send" type="submit">Send <span aria-hidden="true">↑</span></button>
+    </form>
+    <p class="hint">Answers link to the RUPP sources used. For details that are missing, contact the department.</p>
+  </div>
+</main>
+</div>
+<script>
+const suggestions = document.querySelector("#suggestions");
+const messages = document.querySelector("#messages");
+const form = document.querySelector("#ask");
+const input = document.querySelector("#question");
+const status = document.querySelector("#status");
+let pending = null;
+
+function appendMessage(role, content, sources = []) {
+  const message = document.createElement("article");
+  message.className = "message " + role;
+  const heading = document.createElement("h3");
+  heading.textContent = role === "user" ? "You" : "RUPP Student Assistant";
+  message.append(heading);
+  let list = null;
+  for (const line of content.split("\n")) {
+    if (line.startsWith("- ")) {
+      if (!list) {
+        list = document.createElement("ul");
+        message.append(list);
+      }
+      const item = document.createElement("li");
+      item.textContent = line.slice(2);
+      list.append(item);
+    } else {
+      list = null;
+      if (line.trim()) {
+        const paragraph = document.createElement("p");
+        paragraph.textContent = line;
+        message.append(paragraph);
+      }
+    }
+  }
+  sources.forEach((source, index) => {
+    const link = document.createElement("a");
+    link.href = source;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = sources.length > 1 ? "RUPP source " + (index + 1) + " ↗" : "View RUPP source ↗";
+    message.append(link);
+  });
+  messages.append(message);
+}
+
+function setBusy(busy) {
+  form.querySelector("button").disabled = busy;
+  for (const button of suggestions.querySelectorAll("button")) button.disabled = busy;
+}
+
+async function ask(question) {
+  question = question.trim();
+  if (!question || pending) return;
+  const request = new AbortController();
+  pending = request;
+  input.value = "";
+  appendMessage("user", question);
+  status.textContent = "Looking up your question…";
+  setBusy(true);
+  status.scrollIntoView({block: "nearest"});
+  try {
+    const response = await fetch("/api/ask", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({question}),
+      signal: request.signal,
+    });
+    const result = await response.json();
+    if (pending !== request) return;
+    appendMessage("assistant", response.ok ? result.answer : result.error, response.ok ? result.sources : []);
+  } catch (error) {
+    if (pending !== request) return;
+    appendMessage("assistant", "I couldn't reach the assistant. Make sure the local server is running and try again.");
+    if (!input.value) input.value = question;
+  } finally {
+    if (pending === request) {
+      pending = null;
+      status.textContent = "";
+      setBusy(false);
+      form.scrollIntoView({block: "nearest"});
+    }
+  }
+}
+
+form.addEventListener("submit", event => {
+  event.preventDefault();
+  ask(input.value);
+});
+document.querySelector("#reset").addEventListener("click", () => {
+  pending?.abort();
+  pending = null;
+  status.textContent = "";
+  messages.replaceChildren();
+  input.value = "";
+  setBusy(false);
+  input.focus();
+  window.scrollTo(0, 0);
+});
+async function loadExamples() {
+  try {
+    const response = await fetch("/api/examples");
+    if (!response.ok) throw new Error();
+    const {examples} = await response.json();
+    for (const question of examples) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "suggestion";
+      button.disabled = Boolean(pending);
+      const label = document.createElement("span");
+      label.textContent = question;
+      const arrow = document.createElement("span");
+      arrow.setAttribute("aria-hidden", "true");
+      arrow.textContent = "↗";
+      button.append(label, arrow);
+      button.addEventListener("click", () => ask(question));
+      suggestions.append(button);
+    }
+  } catch {
+    suggestions.textContent = "Suggestions are temporarily unavailable. You can still type a question below.";
+  }
+}
+loadExamples();
+</script>
+</body>
+</html>
