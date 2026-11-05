@@ -1,0 +1,31 @@
+# Use a standard CPython build (python.org / py launcher), not MSYS2's python:
+# MSYS2 cannot use PyPI's Windows wheels and fails building numpy/cmake from source.
+#
+# CPU PyTorch first (small download; plenty for bge-m3 at this corpus size):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+#
+# Gemma 4 runs outside Python, in Ollama:
+#   winget install Ollama.Ollama
+#   ollama pull gemma4:12b-it-qat
+
+# --- embeddings + answer scoring ---
+FlagEmbedding>=1.2       # bge-m3 dense + sparse (EMBED_BACKEND=bge-m3, the default)
+fastembed>=0.5           # light fallback stack + the answer-sentence cross-encoder
+khmer-nltk>=1.6          # Khmer word segmentation for the sparse path
+
+# --- retrieval plane ---
+qdrant-client>=1.12
+langchain-core>=0.3
+rapidfuzz>=3.0
+httpx>=0.27
+
+# --- ingestion plane ---
+langchain-text-splitters>=0.3
+pymupdf>=1.24
+python-docx>=1.1
+python-pptx>=1.0
+pytesseract>=0.3         # optional: OCR for scanned PDFs (needs the Tesseract binary)
+
+# --- dev ---
+pytest>=8

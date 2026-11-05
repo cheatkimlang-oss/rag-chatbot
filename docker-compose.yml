@@ -1,0 +1,18 @@
+# Architecture Spec §15.1 — infrastructure containers.
+#   docker compose up -d qdrant
+#   $env:QDRANT_URL = "http://localhost:6333"; python -m ingestion.run --rebuild
+# Without QDRANT_URL the code uses Qdrant local mode (data/qdrant_local), which the
+# spec allows for smoke tests only: validate eval numbers against this server.
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.12.4          # pinned: the version eval numbers were validated on
+    ports: ["6333:6333", "6334:6334"]
+    volumes: ["./data/qdrant:/qdrant/storage"]
+
+  # Optional: Ollama is installed natively on this laptop (winget). Use this only
+  # on a machine without it, then: docker compose exec ollama ollama pull gemma4:12b-it-qat
+  ollama:
+    image: ollama/ollama:0.40.14            # pinned like every model tag
+    profiles: ["llm"]                       # started only with --profile llm
+    ports: ["11434:11434"]
+    volumes: ["./data/ollama:/root/.ollama"]

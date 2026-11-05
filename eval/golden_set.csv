@@ -1,0 +1,26 @@
+query_id,query,slice,expected_project_ids,expected_senior_id,notes
+t01,which university do I study at?,topic_en,doc-about-me-profile,,starter set: built from the 3 drop-in files in data/corpus
+t02,what am I studying?,topic_en,doc-about-me-profile,,
+t03,what are my goals?,topic_en,doc-about-me-profile,,bullet list
+t04,what exam am I preparing for?,topic_en,doc-about-me-profile,,IELTS bullet
+t05,what is my main project?,topic_en,doc-about-me-profile,,Library Management System
+t06,how do I like to learn?,topic_en,doc-about-me-profile,,personal approach
+t07,what is retrieval-augmented generation?,topic_en,doc-rag-presentation,,
+t08,what are the advantages of RAG?,topic_en,doc-rag-presentation,,three advantages slide
+t09,which paper introduced RAG?,topic_en,doc-rag-presentation,,NeurIPS 2020 origins
+t10,what is the RUPP student chatbot proposal?,topic_en,doc-rag-presentation,,slide 8
+t11,generative AI vs RAG systems,topic_en,doc-rag-presentation,,
+t12,what tools does a data science student use?,topic_en,doc-data-science-student-profile,,technical toolkit table
+t13,what math does data science need?,topic_en,doc-data-science-student-profile,,core academic pillars
+t14,which programming languages are used in data science?,topic_en,doc-data-science-student-profile|doc-about-me-profile,,
+t15,data science professional vision,topic_en,doc-data-science-student-profile,,
+x01,quantum computing lab schedule 2019,negative,,,PRD sign-off query: must abstain
+x02,how do I cook rice?,negative,,,
+x03,who won the football world cup?,negative,,,
+x04,what is the bus timetable to the airport?,negative,,,
+x05,weather in phnom penh tomorrow,negative,,,
+x06,how to fix a car engine,negative,,,
+x07,best pizza recipe,negative,,,
+x08,how tall is mount everest?,negative,,,
+x09,stock price of apple today,negative,,,
+x10,how many calories are in a banana?,negative,,,

@@ -1,0 +1,5 @@
+# University web pages to snapshot into data/corpus/ (one URL per line, # = comment).
+#   python -m ingestion.fetch_web   then   python -m ingestion.run
+# Only list pages the department is allowed to republish.
+#
+# https://www.rupp.edu.kh/

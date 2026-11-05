@@ -1,0 +1,816 @@
+{
+  "source": "Royal University of Phnom Penh, Faculty of Engineering",
+  "retrieved": "2026-11-05",
+  "hours_legend": "L = Lecture, P = Practice, S = Self Study (hours strings copied exactly as published)",
+  "department": {
+    "name": "Department of Information Technology Engineering",
+    "url": "https://www.rupp.edu.kh/academics/faculties_and_institutes/faculty_of_engineering/department_of_information_technology_engineering",
+    "vision": "Bachelor of Information Technology Engineering program at FE is designed to provide high-quality Engineers in Information Technology in Cambodia and in regional.",
+    "degrees_listed": {
+      "bachelor": [
+        {
+          "name": "Information Technology Engineering Bachelor Degree",
+          "url": "https://www.rupp.edu.kh/academics/faculties_and_institutes/faculty_of_engineering/department_of_information_technology_engineering/information_technology_engineering_bachelor_degree"
+        },
+        {
+          "name": "Data Science And Engineering Bachelor Degree",
+          "url": "https://www.rupp.edu.kh/academics/faculties_and_institutes/faculty_of_engineering/department_of_information_technology_engineering/data_science_and_engineering_bachelor_degree"
+        },
+        {
+          "name": "Artificial Intelligence Engineering Degree",
+          "url": "https://www.rupp.edu.kh/academics/faculties_and_institutes/faculty_of_engineering/department_of_information_technology_engineering/aie"
+        }
+      ],
+      "master": [
+        {
+          "name": "Master of IT Engineering (MITE)",
+          "description": "Upgrades skills and knowledge of students in information and telecommunication technologies to a specialist level for a variety of ICT careers ranging from programmers/software developers, IT consultants, project managers in IT, network specialists to wireless and mobile engineers."
+        }
+      ]
+    },
+    "study_program": "With elective courses such as Artificial Intelligence, Computer Graphics, Game Development, Data Mining, and Security, it enables students to be capable to develop diverse industrial applications. At ITE, students are required to do practicum from year 2 to year 4 with real world problem. Doing practicum plays a crucial role in training students to acquire valuable experience required skill sets and ability to be ready for work at Tech Company after graduation.",
+    "job_prospects": [
+      "Agile Software Developer",
+      "Agile Web Developer",
+      "Agile Mobile Developer",
+      "Fullstack Developer",
+      "Network & Security Engineer",
+      "Data Engineer"
+    ],
+    "contact": {
+      "office": "Room 302, STEM Building, Royal University of Phnom Penh",
+      "phone": "855-93222380",
+      "email": "fe.info@rupp.edu.kh",
+      "source": "department page (the two program pages list no contact details)"
+    }
+  },
+  "degrees": {
+    "ITE": {
+      "name": "Bachelor of Information Technology Engineering (ITE)",
+      "url": "https://www.rupp.edu.kh/academics/faculties_and_institutes/faculty_of_engineering/department_of_information_technology_engineering/information_technology_engineering_bachelor_degree",
+      "introduction": "Bachelor of Information Technology Engineering (ITE) program at Faculty of Engineering, Royal University of Phnom Penh is designed to provide high-quality training in Information Technology which meets the current and future labor market requirements by emphasizing a broad foundation of computer organization, software, and mathematics both theoretical and practical aspects. With elective courses such as Artificial Intelligence, Computer Graphics, Game Development, Data Mining, and Security, it enables students to be capable to develop diverse industrial applications. At ITE, students are required to do practicum from year 2 to year 4 with real world problem. Doing practicum plays a crucial role in training students to acquire valuable experience required skill sets and ability to be ready for work at Tech Company after graduation. The curriculum of Information Technology Engineering Department is designed for our students with abilities to use new technologies and theories to design and develop computer software. During first and second year, students study about foundation theories of computer software & network engineering. For third & forth year, they will have more advance courses such as Object-Oriented Analysis and Design, Product Design, Network Engineering, Database Design, Operating System, Mobile Application Development, Artificial Intelligence, Commuter Graphic, and Practicum (to build a real product). From the end of third year students must go for internship in private or pubic organizations. Lecturers and Researchers of IT Engineering department mostly graduated from abroad, the key success of our team is to give more homework/assignment/project to students, and let them hand on to build a real thing by applying technologies and theories. Thus, students in our department they will have experiences in team work, developing application, make presentation, and critical thinking.",
+      "prospects": {
+        "research_areas": [
+          "Artificial Intelligence",
+          "Data Mining",
+          "Image Processing and Analysis",
+          "Computer Vision",
+          "3D Modeling and Computer Graphics",
+          "Natural Language Processing",
+          "ICT for Education"
+        ],
+        "job_titles": [
+          "Agile Software Developer",
+          "Agile Web Developer",
+          "Agile Mobile Developer",
+          "Fullstack Developer",
+          "Game Developer",
+          "Network & Security Engineer",
+          "Data Engineer"
+        ],
+        "page_note": "The Prospects tab opens with a paragraph about environmental impact and risk research, which appears to be copied from the Environmental Engineering page."
+      },
+      "evaluation_and_graduation": {
+        "assessment": "Assessment of study will be performed at the end of each semester. Evaluation will be shown as the Grade Point Average (GPA) (4.00 scale) and the Cumulative Grade Point Average (4.00 scale).",
+        "grading_scale": [
+          {
+            "score_range": "85–100",
+            "gpa": 4.0,
+            "grade": "A",
+            "meaning": "Excellent"
+          },
+          {
+            "score_range": "80–84",
+            "gpa": 3.5,
+            "grade": "B+",
+            "meaning": "Very Good"
+          },
+          {
+            "score_range": "70–79",
+            "gpa": 3.0,
+            "grade": "B",
+            "meaning": "Good"
+          },
+          {
+            "score_range": "65–69",
+            "gpa": 2.5,
+            "grade": "C+",
+            "meaning": "Fairly Good"
+          },
+          {
+            "score_range": "50–64",
+            "gpa": 2.0,
+            "grade": "C",
+            "meaning": "Fair"
+          },
+          {
+            "score_range": "45–49",
+            "gpa": 1.5,
+            "grade": "D",
+            "meaning": "Poor"
+          },
+          {
+            "score_range": "<40",
+            "gpa": 0.0,
+            "grade": "E",
+            "meaning": "Fail"
+          }
+        ],
+        "credit_requirement_stated": null,
+        "page_note": "The page states no minimum credits or minimum CGPA for graduation. Its grading table has no band for scores 40–44."
+      },
+      "curriculum": {
+        "Foundation Year": {
+          "Semester I": [
+            {
+              "subject": "Mathematics I",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "Computer Fundamental",
+              "credit": 3.0,
+              "hours": "(2-2)"
+            },
+            {
+              "subject": "Physics",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "Civilization",
+              "credit": 1.5,
+              "hours": "(1.5-0)"
+            },
+            {
+              "subject": "History",
+              "credit": 1.5,
+              "hours": "(1.5-0)"
+            },
+            {
+              "subject": "Critical Thinking & Personal Development",
+              "credit": 2.0,
+              "hours": "(2-0)"
+            },
+            {
+              "subject": "Academic skill",
+              "credit": 2.0,
+              "hours": "(2-0)"
+            },
+            {
+              "subject": "General English I",
+              "credit": 4.0,
+              "hours": "(4-0)"
+            }
+          ],
+          "Semester II": [
+            {
+              "subject": "Mathematics II",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "Technical Drawing",
+              "credit": 3.0,
+              "hours": "(2-2)"
+            },
+            {
+              "subject": "Basic Programming Language",
+              "credit": 3.0,
+              "hours": "(2-2)"
+            },
+            {
+              "subject": "Introduction to statistics",
+              "credit": 3.0,
+              "hours": "(2-2)"
+            },
+            {
+              "subject": "Introduction to electrical Engineering",
+              "credit": 3.0,
+              "hours": "(2-2)"
+            },
+            {
+              "subject": "Philosophy",
+              "credit": 1.5,
+              "hours": "(1.5-0)"
+            },
+            {
+              "subject": "Sociology",
+              "credit": 1.5,
+              "hours": "(1.5-0)"
+            },
+            {
+              "subject": "General English II",
+              "credit": 4.0,
+              "hours": "(4-0)"
+            }
+          ]
+        },
+        "Second Year": {
+          "Semester I": [
+            {
+              "subject": "Advanced Programming Language I",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Data Structure and Algorithm I",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Data Communication I",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "Probability and Statistics",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Mathematics III",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "General English III",
+              "credit": 4.0,
+              "hours": "(4-0)"
+            },
+            {
+              "subject": "Project Practicum",
+              "credit": 1.0,
+              "hours": "(0-4)"
+            }
+          ],
+          "Semester II": [
+            {
+              "subject": "Advanced Programming Language II",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Data Structure and Algorithm II",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Data Communication II",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "Database I",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Discrete Math",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "General English IV",
+              "credit": 4.0,
+              "hours": "(4-0)"
+            },
+            {
+              "subject": "Project Practicum",
+              "credit": 1.0,
+              "hours": "(0-4)"
+            }
+          ]
+        },
+        "Third Year": {
+          "Semester I": [
+            {
+              "subject": "Network Engineering I",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Web Technologies and Cloud Computing I",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Database II",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Operating System",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Object Oriented Analysis and Design",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "General English V",
+              "credit": 4.0,
+              "hours": "(4-0)"
+            },
+            {
+              "subject": "Project Practicum",
+              "credit": 1.0,
+              "hours": "(0-4)"
+            }
+          ],
+          "Semester II": [
+            {
+              "subject": "Network Engineering II",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Web Technology & Cloud Computing II",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Mobile Application Development I",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Software Engineering",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "Introduction to Computer Graphic",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "General English VI",
+              "credit": 4.0,
+              "hours": "(4-0)"
+            },
+            {
+              "subject": "Project Practicum",
+              "credit": 1.0,
+              "hours": "(0-4)"
+            }
+          ]
+        },
+        "Fourth Year": {
+          "Semester I": [
+            {
+              "subject": "Mobile Application Development II",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Management Information System",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "Introduction to Data Mining",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "UI/UX Design",
+              "credit": 3.0,
+              "hours": "(1.5-2)"
+            },
+            {
+              "subject": "Information Security",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "Entrepreneurship",
+              "credit": 3.0,
+              "hours": "(3-0)"
+            },
+            {
+              "subject": "Final Project",
+              "credit": 1.0,
+              "hours": "(0-2)"
+            }
+          ],
+          "Semester II": {
+            "Option 1": [
+              {
+                "subject": "Fin Tech",
+                "credit": 3.0,
+                "hours": "(1.5-2)"
+              },
+              {
+                "subject": "Artificial Intelligence",
+                "credit": 3.0,
+                "hours": "(3-0)"
+              },
+              {
+                "subject": "Introduction to Cryptography",
+                "credit": 3.0,
+                "hours": "(1.5-2)"
+              },
+              {
+                "subject": "Professionalism Computing & Ethics",
+                "credit": 3.0,
+                "hours": "(3-0)"
+              },
+              {
+                "subject": "Project Report",
+                "credit": 5.0,
+                "hours": "(0-10)"
+              }
+            ],
+            "Option 2": [
+              {
+                "subject": "Internship (Hard Skill) & Thesis (GPA>3.5)",
+                "credit": 14.0,
+                "hours": "-"
+              }
+            ]
+          }
+        }
+      },
+      "final_semester_tracks": {
+        "Option 1": {
+          "type": "Coursework + Project Report",
+          "credits": 17.0
+        },
+        "Option 2": {
+          "type": "Internship (Hard Skill) & Thesis",
+          "credits": 14.0,
+          "gpa_requirement": "GPA > 3.5 (as written on the page)"
+        }
+      },
+      "computed_total_credits": {
+        "with_option_1": 158.0,
+        "with_option_2": 155.0
+      },
+      "contact": {
+        "office": "Room 302, STEM Building, Royal University of Phnom Penh",
+        "phone": "855-93222380",
+        "email": "fe.info@rupp.edu.kh",
+        "source": "department page (the two program pages list no contact details)"
+      }
+    },
+    "AIE": {
+      "name": "Artificial Intelligence Engineering Degree (AIE)",
+      "url": "https://www.rupp.edu.kh/academics/faculties_and_institutes/faculty_of_engineering/department_of_information_technology_engineering/aie",
+      "introduction": null,
+      "introduction_page_note": "The Introduction tab contains only the placeholder text 'test introduction'.",
+      "curriculum_statement": "The curriculum of the Data Science & Engineering Department is designed to equip students with the ability to use new technologies and theories to design and develop artificial intelligence and machine learning solutions.",
+      "prospects": {
+        "research_areas": null,
+        "job_titles": null,
+        "page_note": "The tab labelled 'Prospect' holds the curriculum. No careers or research areas are listed."
+      },
+      "evaluation_and_graduation": null,
+      "evaluation_page_note": "No evaluation or graduation section on this page.",
+      "curriculum": {
+        "Foundation Year": {
+          "Semester I": [
+            {
+              "subject": "Mathematics I",
+              "credit": 3.0,
+              "hours": "(3-0-0)"
+            },
+            {
+              "subject": "Basic Programming Language",
+              "credit": 3.0,
+              "hours": "(2-1-0)"
+            },
+            {
+              "subject": "Physics",
+              "credit": 2.0,
+              "hours": "(2-0-0)"
+            },
+            {
+              "subject": "Civilization",
+              "credit": 2.0,
+              "hours": "(2-0-0)"
+            },
+            {
+              "subject": "History",
+              "credit": 2.0,
+              "hours": "(2-0-0)"
+            },
+            {
+              "subject": "Critical Thinking & Personal Development",
+              "credit": 2.0,
+              "hours": "(2-0-0)"
+            },
+            {
+              "subject": "Academic Skills",
+              "credit": 2.0,
+              "hours": "(2-0-0)"
+            },
+            {
+              "subject": "General English I",
+              "credit": 3.0,
+              "hours": "(3-0-0)"
+            }
+          ],
+          "Semester II": [
+            {
+              "subject": "Mathematics II",
+              "credit": 3.0,
+              "hours": "(3-0-0)"
+            },
+            {
+              "subject": "Technical Drawing",
+              "credit": 2.0,
+              "hours": "(1-1-0)"
+            },
+            {
+              "subject": "Advanced Programming Language",
+              "credit": 2.0,
+              "hours": "(2-1-0)"
+            },
+            {
+              "subject": "Introduction to Statistics",
+              "credit": 3.0,
+              "hours": "(2-1-0)"
+            },
+            {
+              "subject": "Introduction to Artificial Intelligence Engineering",
+              "credit": 3.0,
+              "hours": "(2-1-0)"
+            },
+            {
+              "subject": "Philosophy",
+              "credit": 2.0,
+              "hours": "(2-0-0)"
+            },
+            {
+              "subject": "Sociology",
+              "credit": 2.0,
+              "hours": "(2-0-0)"
+            },
+            {
+              "subject": "General English II",
+              "credit": 3.0,
+              "hours": "(3-0-0)"
+            }
+          ]
+        },
+        "Second Year": {
+          "Semester I": [
+            {
+              "subject": "Web and Cloud Technology I",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Data Structure and Algorithm",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Computer Systems and Networking",
+              "credit": 3.0,
+              "hours": "3(3-0-0)"
+            },
+            {
+              "subject": "Probability and Statistics",
+              "credit": 3.0,
+              "hours": "3(3-0-0)"
+            },
+            {
+              "subject": "Discrete Math",
+              "credit": 3.0,
+              "hours": "3(3-0-0)"
+            },
+            {
+              "subject": "Object-oriented Analysis and Design",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Database",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Software Engineering Capstone Project I",
+              "credit": 1.0,
+              "hours": "1(0-0-4)"
+            }
+          ],
+          "Semester II": [
+            {
+              "subject": "Web and Cloud Technology II",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Principles of Artificial Intelligence",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Operating Systems",
+              "credit": 3.0,
+              "hours": "3(2-0-0)"
+            },
+            {
+              "subject": "UI/UX Design and Development",
+              "credit": 2.0,
+              "hours": "2(2-0-0)"
+            },
+            {
+              "subject": "Linear Algebra",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Mobile Application and Technology I",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Cloud Computing & Distributed Systems",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Software Engineering Capstone Project II",
+              "credit": 1.0,
+              "hours": "1(0-0-1)"
+            }
+          ]
+        },
+        "Third Year": {
+          "Semester I": [
+            {
+              "subject": "Mobile Application and Technology II",
+              "credit": 2.0,
+              "hours": "2(1-10)"
+            },
+            {
+              "subject": "Data Mining",
+              "credit": 2.0,
+              "hours": "2(1-1-0)"
+            },
+            {
+              "subject": "Artificial Intelligence and Machine Learning Operations",
+              "credit": 3.0,
+              "hours": "3(2-2-0)"
+            },
+            {
+              "subject": "Mining Massive Data Sets",
+              "credit": 2.0,
+              "hours": "2(1-1-0)"
+            },
+            {
+              "subject": "Software Engineering: Cloud-Native Applications",
+              "credit": 3.0,
+              "hours": "3(3-0-0)"
+            },
+            {
+              "subject": "Principles of Machine Learning",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Cloud Engineering Capstone Project I",
+              "credit": 1.0,
+              "hours": "1(0-0-1)"
+            }
+          ],
+          "Semester II": [
+            {
+              "subject": "Artificial Intelligence and Machine Learning Systems Engineering",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Computer Vision",
+              "credit": 2.0,
+              "hours": "2(1-1-0)"
+            },
+            {
+              "subject": "Natural Language Processing",
+              "credit": 2.0,
+              "hours": "2(2-0-0)"
+            },
+            {
+              "subject": "Large Language Models",
+              "credit": 3.0,
+              "hours": "2(2-0-0)"
+            },
+            {
+              "subject": "Cloud Infrastructure and Security",
+              "credit": 3.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Deep Learning",
+              "credit": 2.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Cloud Engineering Capstone Project II",
+              "credit": 2.0,
+              "hours": "1(0-0-1)"
+            }
+          ]
+        },
+        "Fourth Year": {
+          "Semester I": [
+            {
+              "subject": "Design Thinking & Product Innovation",
+              "credit": 3.0,
+              "hours": "2(0-0-0)"
+            },
+            {
+              "subject": "Enterprise AI and Intelligent Systems",
+              "credit": 3.0,
+              "hours": "2(2-0-0)"
+            },
+            {
+              "subject": "Big Data Application Development",
+              "credit": 2.0,
+              "hours": "2(1-1-0)"
+            },
+            {
+              "subject": "The Ethics of Data and Artificial Intelligence",
+              "credit": 2.0,
+              "hours": "2(2-0-0)"
+            },
+            {
+              "subject": "Reinforcement Learning",
+              "credit": 2.0,
+              "hours": "3(2-1-0)"
+            },
+            {
+              "subject": "Secure Programming",
+              "credit": 2.0,
+              "hours": "2(1-1-0)"
+            },
+            {
+              "subject": "Artificial Intelligence and Machine Learning Capstone Project I",
+              "credit": 2.0,
+              "hours": "1(0-0-4)"
+            }
+          ],
+          "Semester II": [
+            {
+              "subject": "Technology Entrepreneurship & Tech-Startup",
+              "credit": 3.0,
+              "hours": "3(3-0-0)"
+            },
+            {
+              "subject": "Artificial Intelligence Product Management & Engineering Leadership",
+              "credit": 2.0,
+              "hours": "3(3-0-0)"
+            },
+            {
+              "subject": "AI-Driven Financial Technologies",
+              "credit": 2.0,
+              "hours": "3(3-0-0)"
+            },
+            {
+              "subject": "Information Security",
+              "credit": 3.0,
+              "hours": "2(1-1-0)"
+            },
+            {
+              "subject": "Artificial Intelligence and Machine Learning Capstone Project II",
+              "credit": 3.0,
+              "hours": "1(0-0-1)"
+            },
+            {
+              "subject": "Report or Thesis",
+              "credit": 2.0,
+              "hours": null
+            },
+            {
+              "subject": "Internship",
+              "credit": 2.0,
+              "hours": null
+            }
+          ]
+        }
+      },
+      "final_semester_tracks": {
+        "page_note": "Fourth Year Semester II lists 'Report or Thesis' (2 credits) and 'Internship' (2 credits) next to the coursework. The page does not say whether they are alternatives or both required, and gives no GPA threshold."
+      },
+      "computed_total_credits": {
+        "all_listed_courses": 148.0
+      },
+      "data_quality_notes": [
+        "Hours strings are inconsistent as published, e.g. '2(1-10)' for Mobile Application and Technology II.",
+        "Several rows have different credit and hour figures, e.g. Large Language Models: credit 3, hours 2(2-0-0); Deep Learning: credit 2, hours 3(2-1-0)."
+      ],
+      "contact": {
+        "office": "Room 302, STEM Building, Royal University of Phnom Penh",
+        "phone": "855-93222380",
+        "email": "fe.info@rupp.edu.kh",
+        "source": "department page (the two program pages list no contact details)"
+      }
+    }
+  }
+}
