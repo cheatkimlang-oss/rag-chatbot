@@ -367,8 +367,15 @@ def answer(query: str, kb: KnowledgeBase, *, facets: dict | None = None, page: i
         res = browse(facets_m, kb, page=page)
         res.update(query=query, normalized=routed["normalized"])
     else:
-        res = _topic_result(kb, {**routed, "intent": intent if intent != I.PORTFOLIO else I.TOPIC_SEARCH},
-                            facets_m, page, enable_llm)
+        topic_routed = {**routed, "intent": intent if intent != I.PORTFOLIO else I.TOPIC_SEARCH}
+        res = _topic_result(kb, topic_routed, facets_m, page, enable_llm)
+        explicit = facets or {}
+        if res["status"] == "abstain" and not res["weak_matches"] and facets_m != explicit:
+            # A program code or year in the question text ("ITE") became a filter, but
+            # documents without that metadata (web pages, notes) can never pass it.
+            # Nothing passed, so search again with only the filters the caller set.
+            res = _topic_result(kb, topic_routed, explicit, page, enable_llm)
+            res["note"] = "No project is tagged with that program/year; searched all documents."
         if res["status"] == "abstain" and not facets_m and len(routed["normalized"].split()) <= 4:
             # A short query nothing matched may be a misspelled name ("sokdaraa").
             # Only a single confident fuzzy match counts; ambiguity keeps the abstain.

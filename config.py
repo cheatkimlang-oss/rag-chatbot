@@ -25,9 +25,13 @@ from dataclasses import asdict, dataclass
 #   refuses 10/10 unanswerable (PRD abstention target); serves 3 answers, 1 of them a
 #   wrong sentence; also refuses 1 correct answer scoring 1.06. At 0.0: 9/10 refused,
 #   3 wrong answers served. 20 questions is a tiny sample — replace with the golden-set sweep.
+# cross 3.0 — re-measured 2026-11-06 with eval/run_qa.py (149 answerable + 20 unanswerable,
+#   8-file corpus incl. *_facts.md). Lowest correct answers: 3.95, 4.54, 4.98; served
+#   negatives: 2.97, 3.70, 4.02. 3.0 drops one wrong answer at no cost; 4.5 would drop all
+#   three but also refuse "what do I value?" (3.95) — too close to call on this sample.
 # dense 0.5 — NOT measured (only used when the cross-encoder is unavailable).
 ANSWER_GATES = {
-    "cross": {"*": 2.0},                               # MS-MARCO logits
+    "cross": {"*": 3.0},                               # MS-MARCO logits
     "dense": {"*": 0.5},                               # cosine + 0.2 * keyword overlap
 }
 

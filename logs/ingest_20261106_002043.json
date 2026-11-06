@@ -1,0 +1,57 @@
+{
+  "started_at": "2026-11-06T00:20:42",
+  "status": "ok",
+  "embedder": "fastembed:BAAI/bge-small-en-v1.5+Qdrant/bm25",
+  "collection": "rupp_senior_projects_v1",
+  "corpus_hash": "7f54f8994338df5592fc7dc5186b7e336bc66b8fc39904e0c4e8e8846d758b40",
+  "errors": [],
+  "warnings": [],
+  "documents": [
+    {
+      "doc_id": "doc-about-me-profile__about_me_profile.pdf",
+      "file": "data\\corpus\\about_me_profile.pdf",
+      "parser": "pymupdf",
+      "parse_status": "ok",
+      "pages": 2,
+      "chunks": 4,
+      "errors": []
+    },
+    {
+      "doc_id": "doc-data-science-student-profile__Data_Science_Student_Profile.docx",
+      "file": "data\\corpus\\Data_Science_Student_Profile.docx",
+      "parser": "python-docx",
+      "parse_status": "ok",
+      "pages": 5,
+      "chunks": 7,
+      "errors": []
+    },
+    {
+      "doc_id": "doc-rag-presentation__RAG presentation.pdf",
+      "file": "data\\corpus\\RAG presentation.pdf",
+      "parser": "pymupdf",
+      "parse_status": "ok",
+      "pages": 10,
+      "chunks": 11,
+      "errors": []
+    }
+  ],
+  "removed": [],
+  "points_written": 22,
+  "points_total": 22,
+  "config": {
+    "chunking": {
+      "chunk_unit": "chars",
+      "chunk_size": 700,
+      "chunk_overlap": 100,
+      "slide_chunk_size": 300,
+      "slide_chunk_overlap": 50,
+      "min_chunk_chars": 80
+    },
+    "index": {
+      "distance": "cosine",
+      "hnsw_m": 16,
+      "hnsw_ef_construct": 200
+    }
+  },
+  "seconds": 1.32
+}

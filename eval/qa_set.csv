@@ -1,0 +1,170 @@
+id,question,slice,expected_doc,must_contain
+a01,which university do I study at?,about_me,doc-about-me-profile,Royal University of Phnom Penh
+a02,what am I studying?,about_me,doc-about-me-profile,Data Science and Engineering
+a03,what am I interested in?,about_me,doc-about-me-profile,artificial intelligence|programming
+a04,what technologies have I explored?,about_me,doc-about-me-profile,Python|React|MongoDB
+a05,what frontend tools have I used?,about_me,doc-about-me-profile,React
+a06,what backend language have I learned?,about_me,doc-about-me-profile,PHP
+a07,which database have I used?,about_me,doc-about-me-profile,MongoDB
+a08,what machine learning topic have I studied?,about_me,doc-about-me-profile,churn
+a09,what is my main project?,about_me,doc-about-me-profile,Library Management System
+a10,what part of the library management system did I work on?,about_me,doc-about-me-profile,frontend|user interface
+a11,what kind of explanations do I prefer?,about_me,doc-about-me-profile,beginner-friendly
+a12,what exam am I preparing for?,about_me,doc-about-me-profile,IELTS
+a13,which country do I want to study in?,about_me,doc-about-me-profile,Japan
+a14,what are my goals?,about_me,doc-about-me-profile,IELTS|programming|Japan|projects|income
+a15,how do I learn best?,about_me,doc-about-me-profile,by doing
+a16,what do I do when something does not work?,about_me,doc-about-me-profile,asking questions
+a17,what do I value?,about_me,doc-about-me-profile,personal growth
+a18,do I want to earn income online?,about_me,doc-about-me-profile,income online
+a19,have I worked with RAG before?,about_me,doc-about-me-profile|doc-rag-presentation,Retrieval-Augmented Generation|RAG
+d01,what is a data science major?,ds_profile,doc-data-science-student-profile,intersection
+d02,what math does data science need?,ds_profile,doc-data-science-student-profile,linear algebra
+d03,what computer science skills do data science students need?,ds_profile,doc-data-science-student-profile,data structures|software design
+d04,which vector database do data science students use?,ds_profile,doc-data-science-student-profile,Qdrant
+d05,what tool manages the machine learning model lifecycle?,ds_profile,doc-data-science-student-profile,MLflow
+d06,which programming languages are used in data science?,ds_profile,doc-data-science-student-profile,Python
+d07,what data frameworks do data science students use?,ds_profile,doc-data-science-student-profile,Pandas|PyTorch
+d08,what infrastructure and storage tools are used?,ds_profile,doc-data-science-student-profile,Docker|PostgreSQL
+d09,what analysis environments do data science students use?,ds_profile,doc-data-science-student-profile,Jupyter
+d10,what is interdisciplinary synthesis?,ds_profile,doc-data-science-student-profile,financial metrics
+d11,what is sustainable systems design?,ds_profile,doc-data-science-student-profile,sustainable community development
+d12,what is iterative innovation?,ds_profile,doc-data-science-student-profile,progressive experimentation
+d13,what do data science students turn datasets into?,ds_profile,doc-data-science-student-profile,actionable narratives
+r01,who supervises the RAG project?,rag_deck,doc-rag-presentation,Chap Chanpiseth
+r02,who are the researchers of group 1?,rag_deck,doc-rag-presentation,Ngoun Nuongswayumphou|Cheat Kimlang
+r03,what is retrieval-augmented generation?,rag_deck,doc-rag-presentation,external verified documents|retriev
+r04,what are the four stages of RAG?,rag_deck,doc-rag-presentation,Indexing|Retrieval|Augmentation|Generation
+r05,how does RAG reduce hallucination?,rag_deck,doc-rag-presentation,cite retrieved passages|grounded|retrieved
+r06,how is a RAG knowledge base updated?,rag_deck,doc-rag-presentation,index files|new files|uploading
+r07,who wrote the original RAG paper?,rag_deck,doc-rag-presentation,Patrick Lewis
+r08,where was the RAG paper published?,rag_deck,doc-rag-presentation,NeurIPS
+r09,what is the title of the RAG paper?,rag_deck,doc-rag-presentation,Knowledge-Intensive NLP
+r10,which institutions created RAG?,rag_deck,doc-rag-presentation,Meta AI|Facebook AI Research|University College London
+r11,what is the difference between generative AI and RAG?,rag_deck,doc-rag-presentation,training weights|external documents|hallucination|retrieved context
+r12,what is RAG mainly used for?,rag_deck,doc-rag-presentation,Private Data QA|Helpdesks|Academic Assistants|knowledge bases
+r13,what file formats can RAG ingest?,rag_deck,doc-rag-presentation,PDF
+r14,what are the three strengths of RAG?,rag_deck,doc-rag-presentation,Multi-Modal|Configurable|Grounded
+r15,what does the system say when the answer is missing?,rag_deck,doc-rag-presentation,I do not know
+r16,what problem does the RUPP student chatbot solve?,rag_deck,doc-rag-presentation,disconnected PDFs
+r17,what is the solution proposed for the RUPP chatbot?,rag_deck,doc-rag-presentation,centralized RAG agent
+r18,what tech stack is planned for the chatbot?,rag_deck,doc-rag-presentation,LangChain|Qdrant|Gemini
+r19,which LLM is planned for the RUPP chatbot?,rag_deck,doc-rag-presentation,Gemini
+r20,how many students will the chatbot help?,rag_deck,doc-rag-presentation,"10,000"
+r21,does RAG need model retraining to add new data?,rag_deck,doc-rag-presentation,retraining|re-training
+r22,what are the steps of the engineering pipeline?,rag_deck,doc-rag-presentation,Data Intake|Preparation|Retrieval|LLM Synthesis|Collect official
+f01,what is the vision of the Faculty of Engineering?,faculty,doc-rupp-faculty-of-engineering,excellence in teaching
+f02,what is the mission of the Faculty of Engineering?,faculty,doc-rupp-faculty-of-engineering,Comprehensive|research|Global|Soft Skills|Lifelong|Community
+f03,when was the Faculty of Engineering established?,faculty,doc-rupp-faculty-of-engineering,2013
+f04,who is the dean of the Faculty of Engineering?,faculty,doc-rupp-faculty-of-engineering,Nguonphan Pheakdey
+f05,what departments are in the Faculty of Engineering?,faculty,doc-rupp-faculty-of-engineering,Information Technology Engineering|Bio-Engineering|Environmental Engineering
+f06,how many departments does the Faculty of Engineering have?,faculty,doc-rupp-faculty-of-engineering,four|five|5
+f07,what teaching framework does the Faculty of Engineering use?,faculty,doc-rupp-faculty-of-engineering,CDIO
+f08,what international programs does the Faculty of Engineering offer?,faculty,doc-rupp-faculty-of-engineering,Food|Data science
+f09,where is the Faculty of Engineering office?,faculty,doc-rupp-faculty-of-engineering,Room 103|STEM Building
+f10,what is the phone number of the Faculty of Engineering?,faculty,doc-rupp-faculty-of-engineering,096 328 4995|855-93222380
+f11,what is the email of the Faculty of Engineering?,faculty,doc-rupp-faculty-of-engineering|doc-rupp-ite-facts,fe.info@rupp.edu.kh
+f12,what is the RUPP phone number?,faculty,doc-rupp-faculty-of-engineering,883 640
+f13,what is the general email of RUPP?,faculty,doc-rupp-faculty-of-engineering,info@rupp.edu.kh
+f14,what bachelor programs does the Faculty of Engineering offer?,faculty,doc-rupp-faculty-of-engineering,Mechanical|Bioengineering|Food Technology|Artificial Intelligence
+f15,does the Faculty of Engineering offer master programs?,faculty,doc-rupp-faculty-of-engineering|doc-rupp-ite-facts,master
+f16,what soft skills does the Faculty of Engineering teach?,faculty,doc-rupp-faculty-of-engineering,Communication|Team Work|Problem Solving
+f17,how many hours of English do engineering students study?,faculty,doc-rupp-faculty-of-engineering,4 hours
+f18,what is the RUPP Facebook page?,faculty,doc-rupp-faculty-of-engineering,facebook.com/ruppedu.kh
+f19,what is the RUPP Telegram channel?,faculty,doc-rupp-faculty-of-engineering,t.me/ruppnews
+f20,what journals does RUPP publish?,faculty,doc-rupp-faculty-of-engineering,CJBAR|CJNH
+f21,what is the address of RUPP?,faculty,doc-rupp-faculty-of-engineering,Russian Federation
+f22,why was the Faculty of Engineering founded?,faculty,doc-rupp-faculty-of-engineering,qualified engineers
+f23,which campus is the Faculty of Engineering on?,faculty,doc-rupp-faculty-of-engineering,Campus 1
+i01,what is the ITE bachelor degree?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Information Technology
+i02,what elective courses does ITE offer?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Game Development|Computer Graphics
+i03,in which years do ITE students do practicum?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,year 2 to year 4
+i04,when do ITE students do an internship?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,third year
+i05,what jobs can ITE graduates do?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Agile Software Developer
+i06,what are the research areas of the IT Engineering department?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Computer Vision
+i07,what grade is a score of 85 to 100 in ITE?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,A
+i08,what score range is a B+ in ITE?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,80
+i09,what score is a fail in ITE?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,<40|Fail
+i10,what GPA scale does ITE use?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,4.00
+i11,what are the ITE final semester options?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Option 1|Option 2
+i12,what GPA do I need for the ITE internship and thesis option?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,3.5
+i13,how many credits is ITE option 1?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,17
+i14,how many credits is the ITE degree?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,158
+i15,what courses are in ITE first year semester 1?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Computer Fundamental
+i16,what courses are in ITE first year semester 2?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Basic Programming Language
+i17,what courses are in ITE second year semester 1?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Data Structure and Algorithm I
+i18,what subjects do ITE students take in year 2 semester 2?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Database I
+i19,what courses are in ITE third year semester 1?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Network Engineering I
+i20,what subjects are in ITE year 3 semester 2?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Mobile Application Development I
+i21,what courses are in ITE fourth year semester 1?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,UI/UX
+i22,what courses are in ITE option 1 of the final semester?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Fin Tech
+i23,in which year do ITE students study Operating System?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,third year|Third Year
+i24,when do ITE students study Artificial Intelligence?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,fourth year|Fourth Year|Option 1
+i25,how many credits is General English I in ITE?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,4
+i26,what is the email of the IT Engineering department?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,fe.info@rupp.edu.kh
+i27,what is the phone number of the IT Engineering department?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,855-93222380
+i28,where is the IT Engineering department office?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Room 302
+i29,does the IT Engineering department offer a master degree?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,MITE
+i30,what is the vision of the IT Engineering department?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,high-quality Engineers
+i31,what bachelor degrees does the IT Engineering department offer?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Data Science And Engineering|Artificial Intelligence Engineering
+i32,what is the credit for the ITE internship and thesis?,ite,doc-rupp-ite-facts|doc-rupp-ite-curriculum,14
+e01,what is the AIE degree?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,artificial intelligence
+e02,how many credits is the AIE degree?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,148
+e03,what courses are in AIE first year semester 1?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Basic Programming Language
+e04,what courses are in AIE second year semester 1?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Web and Cloud Technology I
+e05,what courses are in AIE second year semester 2?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Principles of Artificial Intelligence
+e06,what courses are in AIE third year semester 1?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Principles of Machine Learning
+e07,what courses are in AIE third year semester 2?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Large Language Models
+e08,what courses are in AIE fourth year semester 1?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Reinforcement Learning
+e09,what courses are in AIE fourth year semester 2?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Technology Entrepreneurship
+e10,when do AIE students study deep learning?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,third year|Third Year
+e11,what is in the AIE final semester?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Report or Thesis|Internship
+e12,does the artificial intelligence engineering degree teach large language models?,aie,doc-rupp-ite-facts|doc-rupp-ite-curriculum,Large Language Models
+s01,what is the DSE program?,dse,doc-data-science-engineering-degree-specification,Artificial Intelligence|Big Data
+s02,what does DSE stand for?,dse,doc-data-science-engineering-degree-specification,Data Science and Engineering
+s03,what are the core objectives of DSE?,dse,doc-data-science-engineering-degree-specification,rigorous training
+s04,which partners support the DSE program?,dse,doc-data-science-engineering-degree-specification,KOICA|GIST
+s05,when does DSE project practicum start?,dse,doc-data-science-engineering-degree-specification,Year 2
+s06,what are the DSE research domains?,dse,doc-data-science-engineering-degree-specification,Big Data|Business Intelligence
+s07,what does the business intelligence research domain cover?,dse,doc-data-science-engineering-degree-specification,marketing metrics|decision automation
+s08,what jobs can DSE graduates do?,dse,doc-data-science-engineering-degree-specification,Data Analyst
+s09,can a data science graduate become a machine learning engineer?,dse,doc-data-science-engineering-degree-specification,Machine Learning Engineer
+s10,what grade is a score of 80 to 84 in DSE?,dse,doc-data-science-engineering-degree-specification,B+
+s11,what are the DSE final semester tracks?,dse,doc-data-science-engineering-degree-specification,Research Thesis Track
+s12,what is the DSE extended training track?,dse,doc-data-science-engineering-degree-specification,cooperative training
+s13,who is the DSE research thesis track for?,dse,doc-data-science-engineering-degree-specification,high-achieving
+s14,what is the DSE course work track?,dse,doc-data-science-engineering-degree-specification,structured coursework
+s15,what courses are in DSE first year semester 1?,dse,doc-data-science-engineering-degree-specification,English Composition
+s16,what courses are in DSE foundation year semester 2?,dse,doc-data-science-engineering-degree-specification,Calculus I
+s17,what courses are in DSE second year semester 1?,dse,doc-data-science-engineering-degree-specification,Object-Oriented Design
+s18,what subjects do DSE students take in year 2 semester 2?,dse,doc-data-science-engineering-degree-specification,Database Design
+s19,what courses are in DSE third year semester 1?,dse,doc-data-science-engineering-degree-specification,Big Data and Web Mining
+s20,what courses are in DSE third year semester 2?,dse,doc-data-science-engineering-degree-specification,Deep Learning and Application
+s21,what courses are in DSE fourth year semester 1?,dse,doc-data-science-engineering-degree-specification,Marketing Analytics
+s22,what courses are in DSE fourth year semester 2?,dse,doc-data-science-engineering-degree-specification,Leadership Skill
+s23,how many credits is the DSE professional internship?,dse,doc-data-science-engineering-degree-specification,8
+s24,how many credits is the DSE final project?,dse,doc-data-science-engineering-degree-specification,7
+s25,how many credits is the DSE degree?,dse,doc-data-science-engineering-degree-specification,156
+s26,when do DSE students study cryptography?,dse,doc-data-science-engineering-degree-specification,third year|Third Year
+s27,when do DSE students study machine learning?,dse,doc-data-science-engineering-degree-specification,third year|Third Year
+s28,which department runs the DSE program?,dse,doc-data-science-engineering-degree-specification,Information Technology Engineering
+n01,quantum computing lab schedule 2019,negative,,
+n02,how do I cook rice?,negative,,
+n03,who won the football world cup?,negative,,
+n04,what is the bus timetable to the airport?,negative,,
+n05,weather in phnom penh tomorrow,negative,,
+n06,how to fix a car engine,negative,,
+n07,best pizza recipe,negative,,
+n08,how tall is mount everest?,negative,,
+n09,stock price of apple today,negative,,
+n10,how many calories are in a banana?,negative,,
+n11,what is the tuition fee for ITE?,negative_in_domain,,
+n12,what is the tuition fee for DSE?,negative_in_domain,,
+i33,who is the head of the IT Engineering department?,ite_not_stated,doc-rupp-ite-facts,does not name
+n14,what time do DSE classes start on Friday?,negative_in_domain,,
+s29,what GPA is required for the DSE research thesis track?,dse_not_stated,doc-data-science-engineering-degree-specification,does not state
+n16,when is the scholarship deadline?,negative_in_domain,,
+n17,does RUPP have a dormitory?,negative_in_domain,,
+n18,what are the admission requirements for the Faculty of Engineering?,negative_in_domain,,
+n19,what is my student ID number?,negative_in_domain,,
+n20,when is the final exam for Data Structure and Algorithm?,negative_in_domain,,

@@ -31,6 +31,8 @@ To pursue an excellence in teaching, research and community engagement in Engine
 - **English:** 4 hours per week for 3 years, with a certificate of completion
 
 ### Dean's Message (Dr. Nguonphan Pheakdey)
+The Dean of the Faculty of Engineering is Doctor Nguonphan Pheakdey.
+
 > On behalf of all our faculty, staff and students, welcome to the Faculty of Engineering! The Faculty of Engineering, Royal University of Phnom Penh was set up on May, 07 2013 to respond to the increase demand of the industries and private sectors in the country for qualified engineers. The faculty, with four departments, offers now seven degrees programs. We thrive to bring international experiences and new innovative engineering education such as Conceive, Design, Implement, Operate (CDIO) framework to enhance existing programs and building new programs toward international level. We ventured into offering international programs in Food technology & Engineering, Data science & Engineering, 2+2 international program in Automation and Supply Chain System Engineering, and Environmental Engineering. Our engineering programs prepare our students equipped with positive mental attitude, intellectual, entrepreneurship and leadership capacity necessary to meet the challenges of the ever-changing society. With dedication, enthusiasm and hard work, the faculty has been able to produce graduates who are capable of addressing the requirement of the industries and private sectors. The faculty is dedicated to pursue and excellent teaching and research culture to deliver high quality education.
 
 ## 2. Academic Departments
