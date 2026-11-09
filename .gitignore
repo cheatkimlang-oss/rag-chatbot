@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+data/**/*.pdf
+.env
+index/
+
+# Local reference materials and credentials
+/Doc/
+.env.*
+*.pem
+*.key
